@@ -118,17 +118,11 @@ p { margin: 0 0 22px; max-width: 58ch; }
 .not-callout strong { font-weight: 600; }
 
 /* ---------- Logo ---------- */
-.logo-stage {
-  position: relative; background: #fff; border: 1px solid var(--line);
-  aspect-ratio: 16/8; display: grid; place-items: center; overflow: hidden;
-}
-.clearzone {
-  --unit: clamp(22px, 3.3vw, 46px);
-  position: relative; padding: var(--unit);
-  background: var(--muted-powder);
-}
-.clearzone::after { content: ""; position: absolute; inset: var(--unit); background: #fff; }
-.clearzone img { position: relative; z-index: 1; width: clamp(220px, 34vw, 480px); }
+.logo-stage { background: #fff; border: 1px solid var(--line); overflow: hidden; }
+.clearspace { display: block; width: 100%; height: auto; }
+.clearspace .zone rect { fill: var(--muted-powder); }
+.clearspace .unit rect { fill: #b5a1b1; } /* tweede, donkere tint: de maateenheid */
+.clearspace .guides line { stroke: #a9a9a9; stroke-width: 1; vector-effect: non-scaling-stroke; }
 .logo-variants { margin-top: clamp(16px, 2vw, 24px); }
 .logo-variants figure { margin: 0; aspect-ratio: 3/2; display: grid; place-items: center; }
 .logo-variants img { width: 58%; }
