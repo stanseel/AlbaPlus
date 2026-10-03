@@ -262,3 +262,17 @@ footer img { width: 72px; }
 /* Compactere hoogtes */
 .app-photo.wide img { aspect-ratio: 2 / 1; object-fit: cover; object-position: center 55%; }
 .collage { max-width: 1120px; margin-left: auto; margin-right: auto; }
+
+/* Packaging (work in progress) */
+.section-head { display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap; }
+.wip { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; padding: 6px 12px; border: 1px solid currentColor; border-radius: 999px; }
+.pack-hero { margin: 0 0 clamp(12px, 1.6vw, 20px); }
+.pack-hero img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; }
+.pack-grid { display: grid; grid-template-columns: .84fr 1fr; gap: clamp(12px, 1.6vw, 20px); }
+.pack-tall { width: 100%; height: 100%; object-fit: cover; }
+.pack-stack { display: grid; gap: clamp(12px, 1.6vw, 20px); }
+.pack-stack img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+@media (max-width: 900px) {
+  .pack-grid { grid-template-columns: 1fr; }
+  .pack-tall { height: auto; }
+}
