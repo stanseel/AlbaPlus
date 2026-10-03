@@ -2,6 +2,14 @@
    Fonts: Larken (titels) + Degular (tekst) via Adobe Fonts.
    Zolang de Adobe Fonts-kit niet gekoppeld is, vallen we terug op Gilda Display + Figtree. */
 
+/* Eigen namen ("Alba …") zodat lokaal geïnstalleerde versies niet in de weg zitten.
+   Degular = demoversie: geen accenten/leestekens → die tekens vallen terug op Figtree. */
+@font-face { font-family: "Alba Larken"; src: url("../fonts/Larken-Regular/Larken-Regular.woff2") format("woff2"), url("../fonts/Larken-Regular/Larken-Regular.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alba Degular"; src: url("../fonts/degular-font-family/DegularDemo-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alba Degular"; src: url("../fonts/degular-font-family/DegularDemo-Italic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Alba Degular"; src: url("../fonts/degular-font-family/DegularDemo-Medium.otf") format("opentype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Alba Degular"; src: url("../fonts/degular-font-family/DegularDemo-Semibold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
+
 :root {
   --muted-powder: #e6cddf;
   --salt-water:   #9fbed0;
@@ -17,10 +25,8 @@
   --ink: var(--night-watch);
   --line: rgba(33, 50, 64, .18);
 
-  /* Zodra de Adobe Fonts-kit in index.html staat: zet "larken" en "degular" vooraan.
-     Niet eerder — anders pakt de browser lokaal geïnstalleerde varianten (bv. cursief). */
-  --font-display: "Gilda Display", Georgia, serif;
-  --font-text: "Figtree", system-ui, sans-serif;
+  --font-display: "Alba Larken", "Gilda Display", Georgia, serif;
+  --font-text: "Alba Degular", "Figtree", system-ui, sans-serif;
 
   --gutter: clamp(16px, 4.5vw, 64px);
   --max: 1360px;
@@ -75,7 +81,7 @@ section { padding: clamp(64px, 10vw, 140px) var(--gutter); }
   margin: 0 0 clamp(40px, 6vw, 80px);
 }
 .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; opacity: .6; margin: 0 0 14px; }
-h3 { font-size: 21px; font-weight: 600; letter-spacing: -.01em; margin: 0 0 6px; }
+h3 { font-size: 21px; font-weight: 600; letter-spacing: -.02em; margin: 0 0 6px; }
 p { margin: 0 0 22px; max-width: 58ch; }
 .lead { font-size: clamp(19px, 2vw, 23px); line-height: 1.4; }
 
