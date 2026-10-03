@@ -63,7 +63,7 @@ a { color: inherit; }
 .nav .version { margin-left: auto; font-size: 13px; opacity: .6; white-space: nowrap; }
 
 /* ---------- Secties ---------- */
-section { padding: clamp(64px, 10vw, 140px) var(--gutter); }
+section { padding: clamp(44px, 6vw, 84px) var(--gutter); }
 .wrap { max-width: var(--max); margin: 0 auto; }
 .bg-powder { background: var(--muted-powder); }
 .bg-salt   { background: var(--salt-water-50); }
@@ -75,10 +75,10 @@ section { padding: clamp(64px, 10vw, 140px) var(--gutter); }
   font-family: var(--font-display);
   font-weight: 400;
   text-transform: uppercase;
-  font-size: clamp(44px, 7vw, 96px);
+  font-size: clamp(40px, 5.6vw, 76px);
   line-height: .92;
   letter-spacing: -.01em;
-  margin: 0 0 clamp(40px, 6vw, 80px);
+  margin: 0 0 clamp(28px, 3.5vw, 48px);
 }
 .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; opacity: .6; margin: 0 0 14px; }
 h3 { font-size: 21px; font-weight: 600; letter-spacing: -.02em; margin: 0 0 6px; }
@@ -92,18 +92,18 @@ p { margin: 0 0 22px; max-width: 58ch; }
 
 /* ---------- Cover ---------- */
 .cover {
-  min-height: 92vh;
+  min-height: min(62vh, 620px);
   display: flex; flex-direction: column; justify-content: space-between;
-  padding-top: clamp(48px, 8vw, 110px);
+  padding-top: clamp(36px, 5vw, 64px); gap: 40px;
 }
-.cover .logo { width: min(72vw, 820px); }
+.cover .logo { width: min(60vw, 620px); }
 .cover-foot { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; }
 .cover-foot h1 { font-size: clamp(30px, 4vw, 48px); font-weight: 600; letter-spacing: -.02em; margin: 0; line-height: 1.1; }
 .cover-foot .sub { font-size: clamp(20px, 2.4vw, 30px); margin: 4px 0 0; }
 .cover-foot .by { font-size: 15px; margin: 0; }
 
 .hero-photo { position: relative; padding: 0; }
-.hero-photo img { width: 100%; height: min(90vh, 900px); object-fit: cover; }
+.hero-photo img { width: 100%; height: min(64vh, 640px); object-fit: cover; }
 .hero-photo .claim {
   position: absolute; inset: 0; display: grid; place-items: center; text-align: center;
   font-family: var(--font-display); text-transform: uppercase; color: #fff;
@@ -111,10 +111,10 @@ p { margin: 0 0 22px; max-width: 58ch; }
 }
 
 /* ---------- Merk ---------- */
-.identity-photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.identity-photo img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
 .value { border-top: 1px solid var(--ink); padding-top: 18px; }
 .value h3 { font-family: var(--font-display); font-weight: 400; font-size: clamp(30px, 3.4vw, 44px); line-height: 1; text-transform: uppercase; margin-bottom: 18px; }
-.not-callout { margin-top: clamp(48px, 6vw, 80px); padding: 24px 28px; border: 1px solid var(--ink); display: flex; gap: 18px; flex-wrap: wrap; align-items: baseline; }
+.not-callout { margin-top: clamp(32px, 4vw, 48px); padding: 24px 28px; border: 1px solid var(--ink); display: flex; gap: 18px; flex-wrap: wrap; align-items: baseline; }
 .not-callout strong { font-weight: 600; }
 
 /* ---------- Logo ---------- */
@@ -124,14 +124,14 @@ p { margin: 0 0 22px; max-width: 58ch; }
 .clearspace .unit rect { fill: #b5a1b1; } /* tweede, donkere tint: de maateenheid */
 .clearspace .guides line { stroke: #a9a9a9; stroke-width: 1; vector-effect: non-scaling-stroke; }
 .logo-variants { margin-top: clamp(16px, 2vw, 24px); }
-.logo-variants figure { margin: 0; aspect-ratio: 3/2; display: grid; place-items: center; }
-.logo-variants img { width: 58%; }
+.logo-variants figure { margin: 0; aspect-ratio: 2/1; display: grid; place-items: center; }
+.logo-variants img { width: 46%; }
 .logo-variants figcaption { font-size: 13px; }
 .v-tile { position: relative; }
 .v-tile figcaption { position: absolute; left: 16px; bottom: 12px; }
-.donts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 40px; }
+.donts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
 .dont { margin: 0; }
-.dont .box { aspect-ratio: 4/3; display: grid; place-items: center; background: var(--paper); position: relative; overflow: hidden; }
+.dont .box { aspect-ratio: 16/10; display: grid; place-items: center; background: var(--paper); position: relative; overflow: hidden; }
 .dont .box img { width: 60%; }
 .dont .box::after { content: "✕"; position: absolute; top: 8px; right: 12px; font-size: 18px; color: #b0485a; }
 .dont figcaption { font-size: 14px; margin-top: 8px; }
@@ -150,15 +150,15 @@ p { margin: 0 0 22px; max-width: 58ch; }
 .btn:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
 
 /* ---------- Dageraad symbool ---------- */
-.arcs { width: 100%; height: auto; color: var(--ink); }
+.arcs { display: block; width: 100%; max-width: 860px; height: auto; margin: 0 auto; color: var(--ink); }
 .arcs path { fill: none; stroke: currentColor; stroke-width: 1; vector-effect: non-scaling-stroke; }
-.variants { display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: end; margin-top: clamp(40px, 5vw, 64px); }
+.variants { display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: end; margin-top: clamp(28px, 3.5vw, 44px); }
 .variants img { width: 100%; }
 
 .voor { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 80px); align-items: start; }
 .voor .names { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(40px, 5.6vw, 78px); line-height: .92; margin: 0; }
 .voor .cols { columns: 2; column-gap: 28px; font-size: 15px; }
-.rings { position: relative; width: 100%; aspect-ratio: 2/1; margin-top: clamp(40px, 6vw, 72px); overflow: hidden; }
+.rings { position: relative; width: 78%; margin-left: auto; margin-right: auto; aspect-ratio: 2/1; margin-top: clamp(28px, 4vw, 48px); overflow: hidden; }
 .rings div {
   position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%);
   border-radius: 50%; background-size: cover; background-position: center;
@@ -169,9 +169,9 @@ p { margin: 0 0 22px; max-width: 58ch; }
 
 /* ---------- Beeldtaal ---------- */
 .photo-rules { display: grid; gap: 28px; }
-.feature-photo img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
-.moodboard { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: clamp(48px, 6vw, 80px); }
-.moodboard img { width: 100%; aspect-ratio: 3/2.1; object-fit: cover; }
+.feature-photo img { width: 100%; aspect-ratio: 1/1; object-fit: cover; }
+.moodboard { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: clamp(32px, 4vw, 52px); }
+.moodboard img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
 .banner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; }
 .banner span { font-family: var(--font-display); font-size: clamp(32px, 4vw, 56px); text-transform: uppercase; }
 .banner span:last-child { text-align: right; }
@@ -181,7 +181,7 @@ p { margin: 0 0 22px; max-width: 58ch; }
 .swatches { display: grid; grid-template-columns: repeat(4, 1fr); }
 .swatch { display: flex; flex-direction: column; }
 .swatch .main {
-  min-height: 440px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between;
+  min-height: 320px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between;
   border-top-left-radius: 70px;
 }
 .swatch:first-child .main { border-top-left-radius: 70px; }
@@ -189,7 +189,7 @@ p { margin: 0 0 22px; max-width: 58ch; }
 .swatch dl { display: grid; grid-template-columns: auto 1fr; gap: 0 10px; margin: 0 0 18px; font-size: 15px; }
 .swatch dt { font-weight: 600; }
 .swatch dd { margin: 0; }
-.swatch .tint { padding: 22px 28px; font-family: var(--font-display); font-size: 26px; min-height: 120px; }
+.swatch .tint { padding: 22px 28px; font-family: var(--font-display); font-size: 24px; min-height: 76px; }
 .copy { font: inherit; font-size: 15px; background: none; border: 0; padding: 0; color: inherit; cursor: pointer; text-align: left; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .copy.done::after { content: "  gekopieerd"; opacity: .6; text-decoration: none; }
 .sw-powder .main { background: var(--muted-powder); } .sw-powder .tint { background: var(--muted-powder-50); }
@@ -200,18 +200,18 @@ p { margin: 0 0 22px; max-width: 58ch; }
 /* ---------- Typografie ---------- */
 .type-labels { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); margin-bottom: 40px; font-size: 16px; }
 .type-labels strong { font-weight: 600; }
-.specimen-display { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(64px, 10vw, 150px); line-height: .86; margin: 0; }
+.specimen-display { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(56px, 8vw, 120px); line-height: .86; margin: 0; }
 .specimen-text { columns: 2; column-gap: 28px; font-size: 16px; }
 .specimen-text h3 { break-after: avoid; margin-top: 0; }
 .specimen-text p { break-inside: avoid-column; }
-.alphabet { margin-top: clamp(48px, 6vw, 80px); border-top: 1px solid var(--line); padding-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); }
+.alphabet { margin-top: clamp(32px, 4vw, 52px); border-top: 1px solid var(--line); padding-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); }
 .alphabet .a-display { font-family: var(--font-display); font-size: clamp(28px, 3vw, 40px); line-height: 1.15; }
 .alphabet .a-text { font-size: clamp(22px, 2.4vw, 30px); line-height: 1.25; }
 
 /* ---------- Toepassingen ---------- */
 .labels { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 3vw, 40px); }
 .label {
-  border-radius: 22px; padding: clamp(22px, 2.6vw, 34px); aspect-ratio: 5/7;
+  border-radius: 22px; padding: clamp(22px, 2.6vw, 34px); aspect-ratio: 5/6;
   display: flex; flex-direction: column; justify-content: space-between; color: var(--night-watch);
 }
 .label .what { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(22px, 2.5vw, 34px); line-height: .95; margin: 0; }
@@ -224,7 +224,7 @@ p { margin: 0 0 22px; max-width: 58ch; }
 .app-photo img { width: 100%; }
 .app-photo figcaption { font-size: 14px; margin-top: 10px; opacity: .7; }
 /* Collage zoals pagina 15 van de PDF; posities in % van die pagina (1400 × 989) */
-.collage { position: relative; aspect-ratio: 1400 / 989; margin-top: clamp(40px, 5vw, 72px); container-type: inline-size; }
+.collage { position: relative; aspect-ratio: 1400 / 989; margin-top: clamp(28px, 3.5vw, 48px); container-type: inline-size; }
 .collage-head { position: absolute; left: 3.8%; right: 5.3%; top: 0; display: flex; justify-content: space-between; font-size: max(10px, 1.05cqw); line-height: 1.35; }
 .collage-head span:last-child { text-align: left; }
 .collage-plate { position: absolute; left: 20%; top: 11.8%; width: 74.8%; height: 80.7%; overflow: hidden; }
@@ -248,13 +248,13 @@ footer img { width: 72px; }
   .split, .voor, .type-labels, .alphabet, .variants { grid-template-columns: 1fr; }
   .grid-3, .labels { grid-template-columns: 1fr; }
   .swatches { grid-template-columns: 1fr 1fr; }
-  .swatch .main { min-height: 300px; border-top-left-radius: 48px; }
+  .swatch .main { min-height: 240px; border-top-left-radius: 48px; }
   .donts { grid-template-columns: 1fr 1fr; }
   .moodboard { grid-template-columns: repeat(2, 1fr); }
   .banner { grid-template-columns: 1fr 1fr; }
   .banner img { grid-column: 1 / -1; grid-row: 1; width: 100%; }
   .nav .version { display: none; }
-  .label { aspect-ratio: auto; min-height: 420px; max-width: 420px; }
+  .label { aspect-ratio: auto; min-height: 340px; max-width: 420px; }
 }
 @media (max-width: 560px) {
   body { font-size: 16px; }
@@ -267,3 +267,7 @@ footer img { width: 72px; }
   .nav { display: none; }
   section { break-inside: avoid; }
 }
+
+/* Compactere hoogtes */
+.app-photo.wide img { aspect-ratio: 2 / 1; object-fit: cover; object-position: center 55%; }
+.collage { max-width: 1120px; margin-left: auto; margin-right: auto; }
