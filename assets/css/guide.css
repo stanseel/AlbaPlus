@@ -3,7 +3,7 @@
    Zolang de Adobe Fonts-kit niet gekoppeld is, vallen we terug op Gilda Display + Figtree. */
 
 /* Eigen namen ("Alba …") zodat lokaal geïnstalleerde versies niet in de weg zitten.
-   Degular = demoversie: geen accenten/leestekens → die tekens vallen terug op Figtree. */
+   Online komt Degular uit Adobe Fonts ("degular-variable"); de lokale demo is enkel een reserve. */
 @font-face { font-family: "Alba Larken"; src: url("../fonts/Larken-Regular/Larken-Regular.woff2") format("woff2"), url("../fonts/Larken-Regular/Larken-Regular.woff") format("woff"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Alba Degular"; src: url("../fonts/degular-font-family/DegularDemo-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Alba Degular"; src: url("../fonts/degular-font-family/DegularDemo-Italic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
@@ -26,7 +26,7 @@
   --line: rgba(33, 50, 64, .18);
 
   --font-display: "Alba Larken", "Gilda Display", Georgia, serif;
-  --font-text: "Alba Degular", "Figtree", system-ui, sans-serif;
+  --font-text: "degular-variable", "Alba Degular", "Figtree", system-ui, sans-serif;
 
   --gutter: clamp(16px, 4.5vw, 64px);
   --max: 1360px;
