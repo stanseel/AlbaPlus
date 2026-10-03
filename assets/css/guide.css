@@ -148,7 +148,10 @@ p { margin: 0 0 22px; max-width: 58ch; }
 
 .voor { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 80px); align-items: start; }
 .voor .names { font-family: var(--font-display); text-transform: uppercase; font-size: clamp(40px, 5.6vw, 78px); line-height: .92; margin: 0; }
-.voor .cols { columns: 2; column-gap: 28px; font-size: 15px; }
+.voor .cols { columns: 2; column-gap: 28px; font-size: 15px; line-height: 1.55; }
+.voor .cols h3 { font-size: 17px; margin: 0 0 4px; break-after: avoid; }
+.voor .cols p { margin-bottom: 16px; }
+.voor .cols p + h3 { margin-top: 6px; }
 .rings { position: relative; width: 78%; margin-left: auto; margin-right: auto; aspect-ratio: 2/1; margin-top: clamp(28px, 4vw, 48px); overflow: hidden; }
 .rings div {
   position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%);
