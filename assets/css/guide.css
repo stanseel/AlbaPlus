@@ -164,10 +164,10 @@ em.lk { font-style: italic; }
 
 /* ---------- 04 Kleuren ---------- */
 .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.colour-swatch { position: relative; display: flex; flex-direction: column; justify-content: space-between; height: 210px; padding: 18px 14px; border-top-left-radius: 50px; }
+.colour-swatch { position: relative; display: flex; flex-direction: column; justify-content: space-between; height: 210px; padding: 24px 22px 18px; border-top-left-radius: 32px; }
 .colour-swatch > span { font-family: var(--font-display); text-transform: uppercase; font-size: 19px; line-height: 1.05; }
 .colour-swatch .codes { font-size: 11px; line-height: 1.5; }
-.colour-swatch .copy { position: absolute; right: 6px; bottom: 14px; width: 36px; height: 36px; display: grid; place-items: center; background: none; border: 0; cursor: pointer; }
+.colour-swatch .copy { position: absolute; right: 10px; bottom: 14px; width: 36px; height: 36px; display: grid; place-items: center; background: none; border: 0; cursor: pointer; }
 .colour-swatch .copy svg { width: 15px; height: 15px; }
 .colour-swatch .copy.done::after { content: "✓"; position: absolute; right: 34px; font-size: 13px; }
 .swatch-powder { --swatch: var(--powder); background: var(--powder); }
@@ -285,7 +285,7 @@ em.lk { font-style: italic; }
   .guide-section-heading > p { font-size: 16px; }
   .rule-grid, .rule-grid.three, .merk-split, .principles, .logo-tiles, .symbol-variants, .photo-pair, .contrast-row, .field-examples, .mini-principle, .pack-grid { grid-template-columns: 1fr; gap: 20px; }
   .donts { grid-template-columns: 1fr 1fr; }
-  .colour-swatch { height: 195px; padding: 18px 12px; }
+  .colour-swatch { height: 195px; padding: 22px 18px 16px; }
   .colour-swatch > span { font-size: 18px; }
   .larken-sample { font-size: 36px; }
   .degular-sample { font-size: 28px; }
