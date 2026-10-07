@@ -12,7 +12,7 @@
     });
   }
 
-  // Inschrijving: er is geen server; na bevestiging opent een vooraf ingevulde e-mail naar info@alba.plus
+  // Inschrijving: er is geen server; na bevestiging opent een vooraf ingevulde e-mail naar hello@alba.plus
   var wrap = document.querySelector('.newsletter-form');
   if (!wrap) return;
   var form = wrap.querySelector('form');
@@ -25,7 +25,7 @@
     var consent = form.querySelector('input[type="checkbox"]').checked;
     if (!consent) return;
     var body = 'Hallo Alba+,\n\nIk ontvang graag updates over jullie lancering, onderzoek en verhalen op ' + email + '.\n\nIk geef toestemming om mij hierover te e-mailen.\n\nBedankt!';
-    var href = 'mailto:info@alba.plus?subject=Alba%2B%20%E2%80%94%20updates%20over%20de%20lancering&body=' + encodeURIComponent(body);
+    var href = 'mailto:hello@alba.plus?subject=Alba%2B%20%E2%80%94%20updates%20over%20de%20lancering&body=' + encodeURIComponent(body);
 
     var result = document.createElement('div');
     result.className = 'signup-result';
