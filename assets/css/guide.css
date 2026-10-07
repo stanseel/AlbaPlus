@@ -134,7 +134,6 @@ em.lk { font-style: italic; }
 .brand-specimen { position: relative; display: grid; place-content: center; justify-items: center; gap: 28px; height: 250px; background: var(--dawn-25); overflow: hidden; }
 .brand-specimen img { position: relative; z-index: 1; width: 160px; height: 60px; }
 .brand-specimen > span { position: relative; z-index: 1; }
-.brand-specimen .sun-lines { position: absolute; bottom: 0; right: -60px; height: 88%; width: auto; aspect-ratio: 1472 / 755; opacity: .12; }
 .clearspace-wrap { margin-top: 24px; background: var(--paper); border: 1px solid var(--border); }
 .clearspace { width: 100%; height: auto; }
 .clearspace .zone rect { fill: var(--powder); }
