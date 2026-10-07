@@ -4,372 +4,510 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alba+ Brand Essentials</title>
-<meta name="description" content="Huisstijlgids van Alba+ — logo, dageraad symbool, beeldtaal, kleur en typografie.">
+<meta name="description" content="Huisstijlgids van Alba+: merk, logo, dageraad symbool, kleur, typografie, beeldtaal, digitale bouwblokken en packaging.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/logo/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
 <!-- Adobe Fonts-webproject "Alba+ brandguide" (stanseel) -->
 <link rel="stylesheet" href="https://use.typekit.net/pxh1lom.css">
-<link rel="stylesheet" href="assets/css/guide.css?v=dl1">
+<link rel="stylesheet" href="assets/css/guide.css?v=2.0c">
 </head>
 <body>
 
-<nav class="nav" aria-label="Inhoud">
-  <a href="#top" class="mark" aria-label="Naar boven"><img src="assets/logo/alba-logo-nightwatch.png" alt="Alba+"></a>
-  <ul>
-    <li><a href="#merk">Merk</a></li>
-    <li><a href="#waarden">Waarden</a></li>
-    <li><a href="#logo">Logo</a></li>
-    <li><a href="#dageraad">Dageraad symbool</a></li>
-    <li><a href="#beeldtaal">Beeldtaal</a></li>
-    <li><a href="#kleur">Kleur</a></li>
-    <li><a href="#typografie">Typografie</a></li>
-    <li><a href="#packaging">Packaging</a></li>
-  </ul>
-  <span class="version">Versie 1.0</span>
-</nav>
+<!-- Dageraad symbool (concentrische bogen), één keer gedefinieerd en hergebruikt -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sun" viewBox="0 0 1472.49 755.5">
+    <g fill="none" stroke="currentColor" stroke-width="1" opacity=".75">
+      <path vector-effect="non-scaling-stroke" d="M962.26,755.5c0-60.37-23.51-117.12-66.2-159.81-42.69-42.69-99.44-66.2-159.81-66.2-60.37,0-117.12,23.51-159.81,66.2-42.69,42.69-66.2,99.44-66.2,159.81"/>
+      <path vector-effect="non-scaling-stroke" d="M0,755.5c0-99.280,19.500-195.730,57.960-286.660,37.1-87.71,90.15-166.420,157.680-233.950,67.540-67.530,146.250-120.590,233.950-157.680,90.930-38.460,187.380-57.960,286.660-57.960s195.730,19.500,286.660,57.960c87.710,37.1,166.420,90.150,233.950,157.680,67.530,67.540,120.590,146.250,157.680,233.950,38.460,90.930,57.960,187.380,57.960,286.660"/>
+      <path vector-effect="non-scaling-stroke" d="M1047.3,755.5c0-83.08-32.36-161.2-91.11-219.95-58.75-58.75-136.86-91.1-219.95-91.1-83.08,0-161.2,32.36-219.95,91.1-58.75,58.75-91.1,136.86-91.1,219.95"/>
+      <path vector-effect="non-scaling-stroke" d="M85.04,755.5c0-87.84,17.24-173.14,51.24-253.53,32.81-77.57,79.74-147.19,139.49-206.94,59.75-59.75,129.38-106.68,206.94-139.49,80.39-34,165.69-51.25,253.53-51.25,87.84,0,173.14,17.24,253.530,51.24,77.570,32.81,147.190,79.74,206.940,139.49,59.750,59.75,106.680,129.38,139.490,206.94,34,80.39,51.240,165.69,51.240,253.53"/>
+      <path vector-effect="non-scaling-stroke" d="M170.08,755.5c0-76.39,14.98-150.55,44.53-220.4,28.52-67.43,69.33-127.97,121.3-179.94,51.97-51.97,112.51-92.78,179.94-121.3,69.86-29.55,144.01-44.53,220.4-44.53,76.39,0,150.55,14.98,220.4,44.53,67.43,28.52,127.97,69.33,179.94,121.3,51.97,51.970,92.780,112.510,121.300,179.940,29.550,69.860,44.530,144.010,44.530,220.400"/>
+      <path vector-effect="non-scaling-stroke" d="M1132.33,755.5c0-105.8-41.2-205.27-116.01-280.08-74.81-74.81-174.28-116.01-280.08-116.01s-205.27,41.2-280.08,116.01c-74.81,74.81-116.01,174.28-116.01,280.08"/>
+      <path vector-effect="non-scaling-stroke" d="M1217.37,755.5c0-265.72-215.41-481.13-481.13-481.13s-481.13,215.41-481.13,481.13"/>
+    </g>
+  </symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></g></symbol>
+  <symbol id="arrow-right" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></g></symbol>
+  <symbol id="download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></g></symbol>
+  <symbol id="copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M4 16V5a1 1 0 0 1 1-1h11"/></g></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></g></symbol>
+</svg>
 
-<!-- ============ COVER ============ -->
-<section class="cover bg-powder" id="top">
-  <img class="logo" src="assets/logo/alba-logo-nightwatch.png" alt="alba+">
-  <div class="cover-foot">
+<header class="brand-header page-width">
+  <a href="#top" aria-label="Alba+ Brand Essentials — naar boven"><img class="wordmark" src="assets/logo/alba-logo-nightwatch.svg" alt="alba+"></a>
+  <nav aria-label="Hoofdnavigatie">
+    <span class="eyebrow">Science that moves with you</span>
+    <a class="link-arrow" href="#logo-downloads">Logo downloaden <svg><use href="#arrow"/></svg></a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="guide-intro page-width">
     <div>
-      <h1>Brand Essentials</h1>
-      <p class="sub">Versie 1.0 — maart 2026</p>
+      <p class="eyebrow">Alba+ / Brand Essentials / 2.0</p>
+      <h1>Een helder systeem.<br><em class="lk">Een herkenbaar merk.</em></h1>
+      <p>De volledige basis van Alba+, op papier en op scherm. Van merk, logo en kleur tot de kleinste interactie.</p>
     </div>
-    <p class="by">Opgemaakt door Stijn Anseel<br><a href="mailto:stijn@stans.be">stijn@stans.be</a></p>
-  </div>
-</section>
-
-<section class="hero-photo" aria-label="Science that moves with you">
-  <img src="assets/img/hero-ogen.jpg" alt="Close-up van de ogen van twee vrouwen, naast elkaar">
-  <p class="claim">Science<br>that<br>moves<br>with you</p>
-</section>
-
-<!-- ============ MERK IDENTITEIT ============ -->
-<section id="merk">
-  <div class="wrap split">
-    <div>
-      <h2 class="title">Merk<br>identiteit</h2>
-      <h3>Betekenis van de naam</h3>
-      <p>Alba is Latijn voor dageraad — het eerste licht. De naam staat voor een nieuw begin, helderheid en kracht. Het plusteken verwijst naar ondersteuning, wetenschap en meer worden dan wie je al bent.</p>
-      <h3>Kernidee</h3>
-      <p>Wetenschap versus Warmte. Evidence-based maar niet koud of klinisch.</p>
-      <h3>Brand promise</h3>
-      <p>Alba+ is er voor vrouwen die niet willen vertragen. We geloven dat menopauze een transitie is, geen achteruitgang. Wij zijn het enige merk dat vrouwelijke hormonale fysiologie koppelt aan performance, omdat vrouwen ondersteuning verdienen die écht bij hun fysiologie past.</p>
+    <div class="guide-mark" aria-hidden="true">
+      <img src="assets/logo/alba-logo-nightwatch.svg" alt="">
+      <svg class="sun-lines" viewBox="0 0 1472.49 755.5" preserveAspectRatio="xMidYMax meet"><use href="#sun"/></svg>
     </div>
-    <figure class="identity-photo" style="margin:0">
-      <img src="assets/img/identiteit-wandelaar.jpg" alt="Vrouw in sportkledij op een landweg bij ochtendgloren">
-    </figure>
-  </div>
-</section>
+  </section>
 
-<!-- ============ MERKWAARDEN ============ -->
-<section id="waarden" class="bg-paper">
-  <div class="wrap">
-    <h2 class="title">Merk<br>waarden</h2>
-    <div class="grid-3">
-      <div class="value">
-        <h3>Evidence-<br>based</h3>
-        <p>Producten en boodschappen vertrekken vanuit wetenschappelijke onderbouwing. Geen claims zonder bewijs.</p>
-      </div>
-      <div class="value">
-        <h3>Female-<br>focused</h3>
-        <p>Expliciete focus op vrouwelijke fysiologie en hormonale gezondheid. Niet als bijzaak maar als vertrekpunt.</p>
-      </div>
-      <div class="value">
-        <h3>Performance<br>driven</h3>
-        <p>Gericht op energie, herstel en duurzame vitaliteit. De vrouw als performer, niet als patiënt.</p>
-      </div>
-    </div>
-    <div class="not-callout">
-      <strong>Wat het merk niet is:</strong>
-      <span>Niet symptoomgericht. Niet betuttelend. Niet generiek.</span>
-    </div>
-  </div>
-</section>
+  <div class="page-width guide-layout">
+    <aside class="guide-sidebar">
+      <p class="eyebrow">In deze styleguide</p>
+      <nav aria-label="Styleguide onderdelen">
+        <a href="#merk"><span>01</span>Het merk<svg><use href="#arrow"/></svg></a>
+        <a href="#logo"><span>02</span>Logo<svg><use href="#arrow"/></svg></a>
+        <a href="#dageraad"><span>03</span>Dageraad symbool<svg><use href="#arrow"/></svg></a>
+        <a href="#kleuren"><span>04</span>Kleuren<svg><use href="#arrow"/></svg></a>
+        <a href="#typografie"><span>05</span>Typografie<svg><use href="#arrow"/></svg></a>
+        <a href="#beeldtaal"><span>06</span>Beeldtaal<svg><use href="#arrow"/></svg></a>
+        <a href="#bouwblokken"><span>07</span>Bouwblokken<svg><use href="#arrow"/></svg></a>
+        <a href="#layout"><span>08</span>Layout &amp; ruimte<svg><use href="#arrow"/></svg></a>
+        <a href="#taal"><span>09</span>Taal &amp; toegankelijkheid<svg><use href="#arrow"/></svg></a>
+        <a href="#packaging"><span>10</span>Packaging<svg><use href="#arrow"/></svg></a>
+      </nav>
+      <p class="claim">Science that<br>moves with you.</p>
+    </aside>
 
-<!-- ============ LOGO ============ -->
-<section id="logo">
-  <div class="wrap">
-    <h2 class="title">Logo</h2>
-    <div class="logo-stage">
-      <!-- Vrije ruimte = de negatieve ruimte uit het plusteken (donkerroze vierkant rechtsonder in de plus) -->
-      <svg class="clearspace" viewBox="0 110 1651 630" role="img" aria-label="Logo met vrije zone: een rand ter grootte van de negatieve ruimte in het plusteken">
-        <g class="zone">
-          <rect x="353" y="197" width="967" height="77"/>
-          <rect x="353" y="574" width="967" height="77"/>
-          <rect x="353" y="274" width="78" height="300"/>
-          <rect x="1242" y="274" width="78" height="300"/>
-        </g>
-        <g class="unit">
-          <rect x="353" y="197" width="78" height="77"/>
-          <rect x="1242" y="197" width="78" height="77"/>
-          <rect x="353" y="574" width="78" height="77"/>
-          <rect x="1242" y="574" width="78" height="77"/>
-          <rect x="1167" y="377" width="75" height="77"/>
-        </g>
-        <g class="guides">
-          <line x1="431" y1="0" x2="431" y2="819"/>
-          <line x1="1063" y1="0" x2="1063" y2="819"/>
-          <line x1="0" y1="377" x2="1651" y2="377"/>
-          <line x1="0" y1="573" x2="1651" y2="573"/>
-        </g>
-        <image href="assets/logo/alba-logo-nightwatch.png" x="431" y="274" width="811" height="303"/>
-      </svg>
-    </div>
-    <div class="split top" style="margin-top:40px">
-      <div>
-        <h3>Vrije ruimte rondom</h3>
-        <p>Houd rondom het logo een vrije zone aan van minimaal de negatieve ruimte uit het ‘plus’ teken.</p>
-      </div>
-      <div>
-        <h3>Wat niet mag</h3>
-        <p>Het logo niet disproportioneel uitrekken, roteren of van kleur veranderen. Geen effecten toevoegen. Niet op drukke achtergronden plaatsen zonder voldoende contrast.</p>
-      </div>
-    </div>
+    <div class="guide-content">
 
-    <div class="grid-2 logo-variants">
-      <figure class="v-tile" style="background:var(--white);border:1px solid var(--line)">
-        <img src="assets/logo/alba-logo-nightwatch.png" alt="Logo in Night Watch op wit">
-        <figcaption>Night Watch op licht</figcaption>
-      </figure>
-      <figure class="v-tile bg-night">
-        <img src="assets/logo/alba-logo-wit.png" alt="Logo in wit op Night Watch">
-        <figcaption>Wit op donker</figcaption>
-      </figure>
-    </div>
-
-    <div class="donts">
-      <figure class="dont stretch"><div class="box"><img src="assets/logo/alba-logo-nightwatch.png" alt=""></div><figcaption>Niet uitrekken</figcaption></figure>
-      <figure class="dont rotate"><div class="box"><img src="assets/logo/alba-logo-nightwatch.png" alt=""></div><figcaption>Niet roteren</figcaption></figure>
-      <figure class="dont recolor"><div class="box"><img src="assets/logo/alba-logo-nightwatch.png" alt=""></div><figcaption>Niet van kleur veranderen</figcaption></figure>
-      <figure class="dont busy"><div class="box"><img src="assets/logo/alba-logo-nightwatch.png" alt=""></div><figcaption>Niet op drukke achtergronden</figcaption></figure>
-    </div>
-
-    <div class="downloads">
-      <a class="btn" href="assets/logo/alba-logo-nightwatch.png" download>↓ Logo Night Watch (PNG)</a>
-      <a class="btn" href="assets/logo/alba-logo-wit.png" download>↓ Logo wit (PNG)</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ DAGERAAD SYMBOOL ============ -->
-<section id="dageraad" class="bg-salt">
-  <div class="wrap">
-    <h2 class="title">Dageraad<br>symbool</h2>
-    <svg class="arcs" viewBox="0 0 1200 600" role="img" aria-label="Vijf concentrische halve cirkels die een opkomende zon suggereren">
-      <path d="M20 600 A580 580 0 0 1 1180 600"/>
-      <path d="M100 600 A500 500 0 0 1 1100 600"/>
-      <path d="M180 600 A420 420 0 0 1 1020 600"/>
-      <path d="M260 600 A340 340 0 0 1 940 600"/>
-      <path d="M340 600 A260 260 0 0 1 860 600"/>
-    </svg>
-    <div class="variants">
-      <div>
-        <h3>Een element om mee te spelen</h3>
-        <p>Concentrische arcs: meerdere dunne halfronde lijnen die samen een opkomende zon suggereren. Haarfijn lijngewicht, clean en minimaal.</p>
-      </div>
-      <img src="assets/img/dageraad-varianten.png" alt="Drie variaties op het symbool: hoekig, golvend en gestippeld">
-    </div>
-  </div>
-</section>
-
-<section class="bg-white" style="padding-top:0;padding-bottom:0">
-  <div class="grid-2" style="gap:0">
-    <img src="assets/img/dageraad-ingredienten.jpg" alt="Ingrediënten gelegd in concentrische bogen op linnen" style="width:100%;aspect-ratio:4/3;object-fit:cover">
-    <img src="assets/img/dageraad-inkt.jpg" alt="Concentrische bogen geschilderd met inkt" style="width:100%;aspect-ratio:4/3;object-fit:cover">
-  </div>
-</section>
-
-<section class="bg-paper" style="padding-bottom:0">
-  <div class="wrap voor">
-    <p class="names">Voor<br>Marjolein<br>Hanna<br>Evelien<br>Marthe<br>Fien<br>Kirsten<br>Eva</p>
-    <div class="cols">
-      <h3>First light</h3>
-      <p>The dawn has been sacred to almost every civilisation that ever looked up at the sky. Long before science could explain the mechanics of sunrise, human cultures across the world independently chose the moment of first light as a symbol of power, renewal and divine presence — the relief of darkness lifting, the return of warmth, the world made visible again.</p>
-      <h3>A transition, not a decline</h3>
-      <p>Menopause is too often told as a story of loss. We see it as a passage. Like the hour before sunrise, it is a shift in rhythm that asks for attention, not resignation. The women we make Alba+ for are in the middle of their lives: working, training, raising, leading. They are not slowing down, and they should not have to.</p>
-      <h3>Science that moves with you</h3>
-      <p>Hormonal change touches energy, sleep, focus and recovery. Every Alba+ formula starts from that physiology: carefully chosen ingredients, meaningful doses and no claims we cannot back up. No miracle promises, no generic one-size-fits-all — just support that fits the female body as it changes, and the life she wants to keep living.</p>
-      <h3>Made for her rhythm</h3>
-      <p>Mornings ask for energy and clarity, evenings for recovery and deep sleep. Our formulas follow the day as she actually lives it — the early run, the long meeting, the restless night — so support arrives when the body asks for it, and steps back when it doesn't.</p>
-      <h3>Every morning, again</h3>
-      <p>In ancient Egypt, the scarab Khepri pushed the solar disc above the horizon each morning as an act of will. The dawn was not a given but a daily miracle. That is the resilience Alba+ stands for: not the dramatic kind, but the quiet, daily kind that simply keeps showing up.</p>
-      <p>Marjolein, Hanna, Evelien, Marthe, Fien, Kirsten, Eva — and every woman who rises with them. Active, confident and entirely herself.</p>
-    </div>
-  </div>
-  <div class="wrap rings" aria-hidden="true">
-    <div class="r1"></div><div class="r2"></div><div class="r3"></div>
-  </div>
-</section>
-
-<!-- ============ BEELDTAAL ============ -->
-<section id="beeldtaal" class="bg-salt" style="background:var(--salt-water)">
-  <div class="wrap banner">
-    <span>Beeld</span>
-    <img src="assets/img/beeldtaal-koelkast.jpg" alt="Vrouw eet noedels voor een open koelkast">
-    <span>Taal</span>
-  </div>
-</section>
-
-<section>
-  <div class="wrap split">
-    <div>
-      <h2 class="title">Beeld<br>taal</h2>
-      <div class="photo-rules">
-        <div>
-          <h3>Fotografie — vrouwen</h3>
-          <p>Authentiek en ongestaged. Vrouwen in beweging, in het dagelijkse leven, op hun best, maar zonder perfectie. Geen stockfoto-esthetiek. Geen filters. Voorkeur voor natuurlijk licht, snapshot stijl. Geflitste schaduwen kunnen. Filmische kwaliteit. Leeftijd: 35–60 jaar. Actief, zelfverzekerd en steeds zonder pose.</p>
+      <!-- ============ 01 HET MERK ============ -->
+      <section class="guide-section" id="merk">
+        <div class="guide-section-heading">
+          <p class="eyebrow">01 / Alba+</p>
+          <h2>Wetenschap versus warmte.</h2>
+          <p>Evidence-based maar niet koud of klinisch. Een merk dat ondersteunt, niet voorschrijft.</p>
         </div>
-        <div>
-          <h3>Fotografie — ingrediënten / product</h3>
-          <p>Clean, top-down of driekwart perspectief. Natuurlijke materialen (steen, linnen, marmer) als achtergrond. Warme maar neutrale belichting.</p>
-        </div>
-        <div>
-          <h3>Fotografie — sfeer</h3>
-          <p>Alledaagse momenten die ook wel eens scheef mogen zitten. Het gouden ochtendlicht kan, maar het tl-licht van de badkamer evengoed. Minimale architectuur, texturen en het leven zoals het is. En zij erin, volkomen zichzelf.</p>
-        </div>
-      </div>
-    </div>
-    <figure class="feature-photo" style="margin:0">
-      <img src="assets/img/beeldtaal-lach.jpg" alt="Lachende vrouw met haar in beweging">
-    </figure>
-  </div>
-  <div class="moodboard">
-    <img src="assets/img/moodboard-1.jpg" alt="">
-    <img src="assets/img/moodboard-2.jpg" alt="">
-    <img src="assets/img/moodboard-3.jpg" alt="">
-    <img src="assets/img/moodboard-4.jpg" alt="">
-    <img src="assets/img/moodboard-5.jpg" alt="">
-    <img src="assets/img/moodboard-6.jpg" alt="">
-    <img src="assets/img/moodboard-7.jpg" alt="">
-    <img src="assets/img/moodboard-8.jpg" alt="">
-    <img src="assets/img/moodboard-9.jpg" alt="">
-  </div>
-  <div class="downloads">
-    <a class="btn" href="assets/downloads/alba-plus-beeldbank.zip" download>↓ Fotopakket (ZIP · 16 foto's · 4 MB)</a>
-  </div>
-</section>
-
-<!-- ============ KLEUR ============ -->
-<section id="kleur">
-  <div class="wrap">
-    <h2 class="title">Kleur</h2>
-    <div class="swatches">
-      <div class="swatch sw-powder">
-        <div class="main">
-          <p class="name">Alba<br>Muted<br>Powder</p>
+        <div class="merk-split">
           <div>
-            <dl><dt>C</dt><dd>10</dd><dt>M</dt><dd>22</dd><dt>Y</dt><dd>2</dd><dt>K</dt><dd>0</dd></dl>
-            <button class="copy" data-copy="#e6cddf">HEX e6cddf</button>
+            <div class="rule">
+              <h3>Betekenis van de naam</h3>
+              <p>Alba is Latijn voor dageraad — het eerste licht. De naam staat voor een nieuw begin, helderheid en kracht. Het plusteken verwijst naar ondersteuning, wetenschap en meer worden dan wie je al bent.</p>
+            </div>
+            <div class="rule">
+              <h3>Brand promise</h3>
+              <p>Alba+ is er voor vrouwen die niet willen vertragen. We geloven dat menopauze een transitie is, geen achteruitgang. Wij zijn het enige merk dat vrouwelijke hormonale fysiologie koppelt aan performance, omdat vrouwen ondersteuning verdienen die écht bij hun fysiologie past.</p>
+            </div>
+            <div class="rule">
+              <h3>Rust met overtuiging</h3>
+              <p>Een editorial ritme: sterke koppen, heldere tekst, echte fotografie en ruimte om te ademen.</p>
+            </div>
+          </div>
+          <img src="assets/img/identiteit-wandelaar.jpg" alt="Vrouw in sportkledij op een landweg bij ochtendgloren">
+        </div>
+
+        <p class="eyebrow sub-label">Merkwaarden</p>
+        <div class="principles">
+          <article class="principle">
+            <span class="eyebrow">01</span>
+            <h3>Evidence-based</h3>
+            <p>Producten en boodschappen vertrekken vanuit wetenschappelijke onderbouwing. Geen claims zonder bewijs.</p>
+          </article>
+          <article class="principle">
+            <span class="eyebrow">02</span>
+            <h3>Female-focused</h3>
+            <p>Expliciete focus op vrouwelijke fysiologie en hormonale gezondheid. Niet als bijzaak maar als vertrekpunt.</p>
+          </article>
+          <article class="principle">
+            <span class="eyebrow">03</span>
+            <h3>Performance driven</h3>
+            <p>Gericht op energie, herstel en duurzame vitaliteit. De vrouw als performer, niet als patiënt.</p>
+          </article>
+        </div>
+        <p class="callout"><strong>Wat het merk niet is:</strong> niet symptoomgericht. Niet betuttelend. Niet generiek.</p>
+
+        <div class="manifest">
+          <div class="manifest-grid">
+            <p class="names">Voor<br>Marjolein<br>Hanna<br>Evelien<br>Marthe<br>Fien<br>Kirsten<br>Eva</p>
+            <div class="cols">
+              <h3>First light</h3>
+              <p>The dawn has been sacred to almost every civilisation that ever looked up at the sky. Long before science could explain the mechanics of sunrise, human cultures across the world independently chose the moment of first light as a symbol of power, renewal and divine presence — the relief of darkness lifting, the return of warmth, the world made visible again.</p>
+              <h3>A transition, not a decline</h3>
+              <p>Menopause is too often told as a story of loss. We see it as a passage. Like the hour before sunrise, it is a shift in rhythm that asks for attention, not resignation. The women we make Alba+ for are in the middle of their lives: working, training, raising, leading. They are not slowing down, and they should not have to.</p>
+              <h3>Science that moves with you</h3>
+              <p>Hormonal change touches energy, sleep, focus and recovery. Every Alba+ formula starts from that physiology: carefully chosen ingredients, meaningful doses and no claims we cannot back up. No miracle promises, no generic one-size-fits-all — just support that fits the female body as it changes, and the life she wants to keep living.</p>
+              <h3>Made for her rhythm</h3>
+              <p>Mornings ask for energy and clarity, evenings for recovery and deep sleep. Our formulas follow the day as she actually lives it — the early run, the long meeting, the restless night — so support arrives when the body asks for it, and steps back when it doesn't.</p>
+              <h3>Every morning, again</h3>
+              <p>In ancient Egypt, the scarab Khepri pushed the solar disc above the horizon each morning as an act of will. The dawn was not a given but a daily miracle. That is the resilience Alba+ stands for: not the dramatic kind, but the quiet, daily kind that simply keeps showing up.</p>
+              <p>Marjolein, Hanna, Evelien, Marthe, Fien, Kirsten, Eva — and every woman who rises with them. Active, confident and entirely herself.</p>
+            </div>
+          </div>
+          <div class="rings" aria-hidden="true"><div class="r1"></div><div class="r2"></div><div class="r3"></div></div>
+        </div>
+      </section>
+
+      <!-- ============ 02 LOGO ============ -->
+      <section class="guide-section" id="logo">
+        <div class="guide-section-heading">
+          <p class="eyebrow">02 / Alba+</p>
+          <h2>Eén herkenbare signatuur.</h2>
+          <p>Gebruik altijd het originele woordmerk. Nooit natekenen, nooit aanpassen.</p>
+        </div>
+        <div class="brand-specimen">
+          <img src="assets/logo/alba-logo-nightwatch.svg" alt="alba+ woordmerk">
+          <span class="eyebrow">Science that moves with you</span>
+          <svg class="sun-lines" viewBox="0 0 1472.49 755.5" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><use href="#sun"/></svg>
+        </div>
+
+        <div class="clearspace-wrap">
+          <svg class="clearspace" viewBox="0 110 1651 630" role="img" aria-label="Logo met vrije zone: een rand ter grootte van de negatieve ruimte in het plusteken">
+            <g class="zone">
+              <rect x="353" y="197" width="967" height="77"/>
+              <rect x="353" y="574" width="967" height="77"/>
+              <rect x="353" y="274" width="78" height="300"/>
+              <rect x="1242" y="274" width="78" height="300"/>
+            </g>
+            <g class="unit">
+              <rect x="353" y="197" width="78" height="77"/>
+              <rect x="1242" y="197" width="78" height="77"/>
+              <rect x="353" y="574" width="78" height="77"/>
+              <rect x="1242" y="574" width="78" height="77"/>
+              <rect x="1167" y="377" width="75" height="77"/>
+            </g>
+            <g class="guides">
+              <line x1="431" y1="0" x2="431" y2="819"/>
+              <line x1="1063" y1="0" x2="1063" y2="819"/>
+              <line x1="0" y1="377" x2="1651" y2="377"/>
+              <line x1="0" y1="573" x2="1651" y2="573"/>
+            </g>
+            <image href="assets/logo/alba-logo-nightwatch.png" x="431" y="274" width="811" height="303"/>
+          </svg>
+        </div>
+        <div class="rule-grid three">
+          <div>
+            <h3>Vrije ruimte rondom</h3>
+            <p>Houd rondom het logo een vrije zone aan van minimaal de negatieve ruimte uit het plusteken (donkerroze).</p>
+          </div>
+          <div>
+            <h3>Minimale grootte</h3>
+            <p>Toon het woordmerk op scherm nooit smaller dan 80 px.</p>
+          </div>
+          <div>
+            <h3>Wat niet mag</h3>
+            <p>Niet disproportioneel uitrekken, roteren of van kleur veranderen. Geen effecten toevoegen. Niet op drukke achtergronden zonder voldoende contrast.</p>
           </div>
         </div>
-        <div class="tint">50%</div>
-      </div>
-      <div class="swatch sw-salt">
-        <div class="main">
-          <p class="name">Alba<br>Salt<br>Water</p>
-          <div>
-            <dl><dt>C</dt><dd>39</dd><dt>M</dt><dd>14</dd><dt>Y</dt><dd>10</dd><dt>K</dt><dd>2</dd></dl>
-            <button class="copy" data-copy="#9fbed0">HEX 9fbed0</button>
+
+        <div class="logo-tiles">
+          <figure class="logo-tile light"><img src="assets/logo/alba-logo-nightwatch.svg" alt="Logo in Night Watch op licht"><figcaption>Night Watch op licht</figcaption></figure>
+          <figure class="logo-tile dark"><img src="assets/logo/alba-logo-wit.svg" alt="Logo in wit op Night Watch"><figcaption>Wit op Night Watch</figcaption></figure>
+        </div>
+        <div class="donts">
+          <figure class="dont stretch"><div class="box"><img src="assets/logo/alba-logo-nightwatch.svg" alt=""></div><figcaption>Niet uitrekken</figcaption></figure>
+          <figure class="dont rotate"><div class="box"><img src="assets/logo/alba-logo-nightwatch.svg" alt=""></div><figcaption>Niet roteren</figcaption></figure>
+          <figure class="dont recolor"><div class="box"><img src="assets/logo/alba-logo-nightwatch.svg" alt=""></div><figcaption>Niet van kleur veranderen</figcaption></figure>
+          <figure class="dont busy"><div class="box"><img src="assets/logo/alba-logo-nightwatch.svg" alt=""></div><figcaption>Niet op drukke achtergronden</figcaption></figure>
+        </div>
+
+        <div class="button-row" id="logo-downloads">
+          <a class="btn btn-primary" href="assets/logo/alba-logo-nightwatch.svg" download>Logo Night Watch (SVG) <svg><use href="#download"/></svg></a>
+          <a class="btn btn-secondary" href="assets/logo/alba-logo-wit.svg" download>Logo wit (SVG) <svg><use href="#download"/></svg></a>
+          <a class="btn btn-text" href="assets/logo/alba-logo-nightwatch.png" download>PNG Night Watch <svg><use href="#download"/></svg></a>
+          <a class="btn btn-text" href="assets/logo/alba-logo-wit.png" download>PNG wit <svg><use href="#download"/></svg></a>
+        </div>
+      </section>
+
+      <!-- ============ 03 DAGERAAD SYMBOOL ============ -->
+      <section class="guide-section" id="dageraad">
+        <div class="guide-section-heading">
+          <p class="eyebrow">03 / Alba+</p>
+          <h2>De opkomende zon.</h2>
+          <p>Concentrische arcs: dunne halfronde lijnen die samen een opkomende zon suggereren. Haarfijn lijngewicht, clean en minimaal. Een element om mee te spelen.</p>
+        </div>
+        <div class="symbol-stage">
+          <svg class="sun-lines" viewBox="0 0 1472.49 755.5" role="img" aria-label="Het dageraad symbool: concentrische halve cirkels"><use href="#sun"/></svg>
+        </div>
+        <div class="symbol-variants">
+          <div class="rule">
+            <h3>Gebruik</h3>
+            <p>Gebruik het motief groot en rustig. De bogen zijn altijd concentrisch en komen vanuit de onderkant van een vlak omhoog, in een lichte tint van Night Watch, achter de inhoud. Hoekig, golvend of gestippeld mag als variatie.</p>
+          </div>
+          <img src="assets/img/dageraad-varianten.png" alt="Drie variaties op het symbool: hoekig, golvend en gestippeld">
+        </div>
+        <div class="photo-pair">
+          <img src="assets/img/dageraad-ingredienten.jpg" alt="Ingrediënten gelegd in concentrische bogen op linnen">
+          <img src="assets/img/dageraad-inkt.jpg" alt="Concentrische bogen geschilderd met inkt">
+        </div>
+      </section>
+
+      <!-- ============ 04 KLEUREN ============ -->
+      <section class="guide-section" id="kleuren">
+        <div class="guide-section-heading">
+          <p class="eyebrow">04 / Alba+</p>
+          <h2>Onze kleuren.</h2>
+          <p>Vier exacte merkkleuren. Gebruik tints voor ruimte en nuance, Night Watch voor leesbaarheid. Klik op een kleur om de HEX-code te kopiëren.</p>
+        </div>
+        <div class="swatches">
+          <div style="--swatch: var(--powder)">
+            <div class="colour-swatch swatch-powder">
+              <span>Alba<br>Muted Powder</span>
+              <div class="codes">#E6CDDF<br>C10 M22 Y2 K0</div>
+              <button class="copy" data-copy="#E6CDDF" aria-label="Kopieer #E6CDDF"><svg><use href="#copy"/></svg></button>
+            </div>
+            <div class="tint-row"><span>50%</span><span>25%</span><span>10%</span></div>
+            <div class="swatch-meaning"><h3>Menselijk &amp; persoonlijk</h3><p>Verhalen, inschrijvingen en zachte accenten.</p></div>
+          </div>
+          <div style="--swatch: var(--water)">
+            <div class="colour-swatch swatch-water">
+              <span>Alba<br>Salt Water</span>
+              <div class="codes">#9FBED0<br>C39 M14 Y10 K2</div>
+              <button class="copy" data-copy="#9FBED0" aria-label="Kopieer #9FBED0"><svg><use href="#copy"/></svg></button>
+            </div>
+            <div class="tint-row"><span>50%</span><span>25%</span><span>10%</span></div>
+            <div class="swatch-meaning"><h3>Helder &amp; wetenschappelijk</h3><p>Inhoudelijke secties, kennis en vertrouwen.</p></div>
+          </div>
+          <div style="--swatch: var(--dawn)">
+            <div class="colour-swatch swatch-dawn">
+              <span>Alba<br>Dawn Light</span>
+              <div class="codes">#F2DEBF<br>C5 M13 Y26 K0</div>
+              <button class="copy" data-copy="#F2DEBF" aria-label="Kopieer #F2DEBF"><svg><use href="#copy"/></svg></button>
+            </div>
+            <div class="tint-row"><span>50%</span><span>25%</span><span>10%</span></div>
+            <div class="swatch-meaning"><h3>Open &amp; optimistisch</h3><p>Warme accenten en lichte achtergrondtinten.</p></div>
+          </div>
+          <div style="--swatch: var(--night)">
+            <div class="colour-swatch swatch-night">
+              <span>Alba<br>Night Watch</span>
+              <div class="codes">#213240<br>C77 M55 Y34 K64</div>
+              <button class="copy" data-copy="#213240" aria-label="Kopieer #213240"><svg><use href="#copy"/></svg></button>
+            </div>
+            <div class="tint-row"><span>50%</span><span>25%</span><span>10%</span></div>
+            <div class="swatch-meaning"><h3>Stevig &amp; herkenbaar</h3><p>Tekst, primaire acties en contrastrijke vlakken.</p></div>
           </div>
         </div>
-        <div class="tint">50%</div>
-      </div>
-      <div class="swatch sw-dawn">
-        <div class="main">
-          <p class="name">Alba<br>Dawn<br>Light</p>
+        <div class="rule-grid">
+          <div><p class="eyebrow">De basis</p><p style="margin-top:8px">Dawn Light 10% als canvas. Night Watch voor tekst. Eén ondersteunende kleur per sectie.</p></div>
+          <div><p class="eyebrow">Tinten</p><p style="margin-top:8px">Meng 50%, 25% of 10% merkkleur met wit. Geen nieuwe kleuren, schaduwtinten of kleurverlopen.</p></div>
+        </div>
+        <div class="contrast-row">
+          <div style="background:var(--powder-25)"><svg><use href="#check"/></svg>Night Watch op lichte merkkleuren</div>
+          <div style="background:var(--night);color:var(--paper)"><svg><use href="#check"/></svg>Licht op Night Watch</div>
+        </div>
+      </section>
+
+      <!-- ============ 05 TYPOGRAFIE ============ -->
+      <section class="guide-section" id="typografie">
+        <div class="guide-section-heading">
+          <p class="eyebrow">05 / Alba+</p>
+          <h2>Twee stemmen. Eén verhaal.</h2>
+          <p>Larken brengt karakter. Degular brengt helderheid. Gebruik uitsluitend deze twee merkfonts, beide via Adobe Fonts.</p>
+        </div>
+        <div class="type-specimen">
+          <div class="type-meta"><span class="eyebrow">Hoofdtitels &amp; quotes / Larken / uitsluitend kapitalen</span><span>Regular · Italic</span></div>
+          <p class="larken-sample">Science that<br><em class="lk">moves with you.</em></p>
+          <p class="type-alphabet" style="font-family:var(--font-display)">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
+          <div class="button-row"><a class="btn btn-secondary" href="https://fonts.adobe.com/fonts/larken" target="_blank" rel="noopener">Larken op Adobe Fonts <svg><use href="#arrow"/></svg></a></div>
+        </div>
+        <div class="type-specimen">
+          <div class="type-meta"><span class="eyebrow">Tussentitels, lopende tekst &amp; interface / Degular</span><span>Regular · Medium · Semibold</span></div>
+          <p class="degular-sample">Helder. Bewust.<br>In balans. Op jouw niveau.</p>
+          <p class="type-alphabet">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br>0123456789 &amp; + % @</p>
+          <div class="button-row"><a class="btn btn-secondary" href="https://fonts.adobe.com/fonts/degular" target="_blank" rel="noopener">Degular op Adobe Fonts <svg><use href="#arrow"/></svg></a></div>
+        </div>
+        <div class="type-scale">
+          <div><span>Display</span><p class="s-display">Een nieuw hoofdstuk.</p><code>72 / 72 · mobiel 44 / 46</code></div>
+          <div><span>Heading 1</span><p class="s-h1">Geen bijzaak.</p><code>48 / 52 · mobiel 36 / 40</code></div>
+          <div><span>Heading 2</span><p class="s-h2">Wetenschap als basis.</p><code>32 / 38 · mobiel 28 / 34</code></div>
+          <div><span>Body</span><p class="s-body">De vrouw als vertrekpunt.</p><code>18 / 28 · mobiel 17 / 26</code></div>
+          <div><span>Eyebrow</span><p class="s-eyebrow">Onze basisprincipes</p><code>11 / 17 · uppercase</code></div>
+        </div>
+        <p class="guide-note">Larken wordt altijd uitsluitend in kapitalen gebruikt — in koppen, quotes en alle andere toepassingen. Koppen zijn regular, nooit vet. Italic benadrukt één gedachte, ook in kapitalen. Degular-bodytekst blijft sentence case. Letterspacing is 0; houd bodytekst tussen 45 en 70 tekens per regel.</p>
+      </section>
+
+      <!-- ============ 06 BEELDTAAL ============ -->
+      <section class="guide-section" id="beeldtaal">
+        <div class="guide-section-heading">
+          <p class="eyebrow">06 / Alba+</p>
+          <h2>Echt. Niet perfect.</h2>
+          <p>Echte vrouwen, echt leven. Fotografie die kracht en menselijkheid laat zien, zonder clichés.</p>
+        </div>
+        <div class="guide-photo-grid">
+          <img src="assets/img/hero-ogen-hr.jpg" alt="Close-up van de ogen van twee vrouwen, naast elkaar">
+          <img src="assets/img/beeldtaal-lach-liggend.jpg" alt="Lachende vrouw met grijs haar">
+        </div>
+        <div class="rule-grid three">
           <div>
-            <dl><dt>C</dt><dd>5</dd><dt>M</dt><dd>13</dd><dt>Y</dt><dd>26</dd><dt>K</dt><dd>0</dd></dl>
-            <button class="copy" data-copy="#f2debf">HEX f2debf</button>
+            <h3>Vrouwen</h3>
+            <p>Authentiek en ongestaged. Vrouwen in beweging, in het dagelijkse leven, op hun best, maar zonder perfectie. Natuurlijk licht, snapshot stijl, filmische kwaliteit; geflitste schaduwen kunnen. Leeftijd 35–60, actief, zelfverzekerd en zonder pose.</p>
+          </div>
+          <div>
+            <h3>Ingrediënten / product</h3>
+            <p>Clean, top-down of driekwart perspectief. Natuurlijke materialen (steen, linnen, marmer) als achtergrond. Warme maar neutrale belichting.</p>
+          </div>
+          <div>
+            <h3>Sfeer</h3>
+            <p>Alledaagse momenten die ook wel eens scheef mogen zitten. Het gouden ochtendlicht kan, maar het tl-licht van de badkamer evengoed. Minimale architectuur, texturen en het leven zoals het is.</p>
           </div>
         </div>
-        <div class="tint">50%</div>
-      </div>
-      <div class="swatch sw-night">
-        <div class="main">
-          <p class="name">Alba<br>Night<br>Watch</p>
+        <p class="callout"><strong>De mens voorop:</strong> zichtbare huidtextuur en spontane beweging. Geen beautyfilters, medische clichés of overmatig geposeerde stockfotografie.</p>
+        <div class="moodboard">
+          <img src="assets/img/moodboard-1.jpg" alt="">
+          <img src="assets/img/moodboard-2.jpg" alt="">
+          <img src="assets/img/moodboard-3.jpg" alt="">
+          <img src="assets/img/moodboard-4.jpg" alt="">
+          <img src="assets/img/moodboard-5.jpg" alt="">
+          <img src="assets/img/moodboard-6.jpg" alt="">
+          <img src="assets/img/moodboard-7.jpg" alt="">
+          <img src="assets/img/moodboard-8.jpg" alt="">
+          <img src="assets/img/moodboard-9.jpg" alt="">
+        </div>
+        <div class="button-row">
+          <a class="btn btn-primary" href="assets/downloads/alba-plus-beeldbank.zip" download>Fotopakket downloaden <svg><use href="#download"/></svg></a>
+          <span class="guide-note" style="margin:0;align-self:center">ZIP · 16 foto's · 4 MB</span>
+        </div>
+        <div class="transition-block">
+          <p>+ Een nieuw hoofdstuk.</p>
+          <svg class="sun-lines" viewBox="0 0 1472.49 755.5" preserveAspectRatio="xMidYMax meet" aria-hidden="true"><use href="#sun"/></svg>
+        </div>
+      </section>
+
+      <!-- ============ 07 BOUWBLOKKEN ============ -->
+      <section class="guide-section" id="bouwblokken">
+        <div class="guide-section-heading">
+          <p class="eyebrow">07 / Alba+ digitaal</p>
+          <h2>Kleine details. Groot verschil.</h2>
+          <p>Consistente acties, heldere invoervelden en een herkenbaar ritme in elk contactmoment.</p>
+        </div>
+        <p class="eyebrow sub-label" style="margin-top:0">Acties</p>
+        <div class="button-row">
+          <button class="btn btn-primary" type="button">Primaire actie <svg><use href="#arrow-right"/></svg></button>
+          <button class="btn btn-secondary" type="button">Secundaire actie <svg><use href="#arrow"/></svg></button>
+          <button class="btn btn-text" type="button">Tekstlink <svg><use href="#arrow"/></svg></button>
+          <button class="btn btn-primary" type="button" disabled>Niet beschikbaar</button>
+        </div>
+        <p class="guide-note">Eén primaire actie per sectie. Minimaal 44 px hoog, 2 px hoekradius. Gebruik een pijl voor richting; schrijf een concrete actie, geen ‘klik hier’.</p>
+
+        <p class="eyebrow sub-label">Formulieren</p>
+        <div class="field-examples">
+          <div><label for="f1">Standaard</label><input class="field" id="f1" placeholder="Jouw naam"></div>
+          <div><label for="f2">Foutmelding</label><input class="field error" id="f2" value="naam@" aria-invalid="true" aria-describedby="f2e"><p class="field-error" id="f2e">Vul een geldig e-mailadres in.</p></div>
+        </div>
+        <p class="guide-note">Een zichtbaar label boven elk veld. Benoem fouten in tekst, niet alleen met kleur. De focusring is zichtbaar voor toetsenbordgebruikers.</p>
+
+        <p class="eyebrow sub-label">Inschrijving / interactief voorbeeld</p>
+        <form class="newsletter-specimen" id="signup" novalidate>
+          <label for="nl-mail">Jouw e-mailadres</label>
+          <div class="email-row">
+            <input class="field" id="nl-mail" type="email" placeholder="naam@voorbeeld.be" autocomplete="off">
+            <button class="btn btn-primary" type="submit">Inschrijven <svg><use href="#arrow-right"/></svg></button>
+          </div>
+          <label class="check"><input type="checkbox"> Ik ontvang graag updates van Alba+. Uitschrijven kan op elk moment.</label>
+          <p class="signup-result" role="status" aria-live="polite"></p>
+        </form>
+
+        <p class="eyebrow sub-label">Redactioneel bouwblok</p>
+        <article class="mini-principle">
           <div>
-            <dl><dt>C</dt><dd>77</dd><dt>M</dt><dd>55</dd><dt>Y</dt><dd>34</dd><dt>K</dt><dd>64</dd></dl>
-            <button class="copy" data-copy="#213240">HEX 213240</button>
+            <span class="eyebrow">01</span>
+            <h3>Evidence based</h3>
+            <p>Onze producten vertrekken vanuit wetenschappelijke onderbouwing. Geen claims zonder bewijs.</p>
+          </div>
+          <img src="assets/img/evidence-pipet.jpg" alt="Pipet boven een glazen schaal">
+        </article>
+        <p class="guide-note">Een fijne bovenlijn, een nummer, een Larken-kop en een echte foto. Geen kaarten in kaarten, geen decoratieve schaduwen.</p>
+      </section>
+
+      <!-- ============ 08 LAYOUT & RUIMTE ============ -->
+      <section class="guide-section" id="layout">
+        <div class="guide-section-heading">
+          <p class="eyebrow">08 / Alba+ digitaal</p>
+          <h2>Ruimte geeft richting.</h2>
+          <p>Een flexibel raster en vaste afstanden zorgen voor rust — op elk scherm.</p>
+        </div>
+        <div class="grid-demo" aria-hidden="true"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span></div>
+        <div class="rule-grid">
+          <div><h3>Desktop</h3><p>12 kolommen. Maximaal 1440 px inhoudsbreedte, 48 px zijmarge en 24 px tussenruimte. Drie gelijke kolommen voor de basisprincipes.</p></div>
+          <div><h3>Mobiel</h3><p>4 kolommen, 20 px zijmarge. Vanaf 768 px schakelt het raster naar meerdere kolommen. Tekst en beeld stapelen zonder horizontaal scrollen.</p></div>
+        </div>
+        <div class="spacing-scale" aria-label="Afstanden: 4, 8, 16, 24, 32, 48, 64 en 96 pixels">
+          <div><i style="height:4px"></i>4</div><div><i style="height:8px"></i>8</div><div><i style="height:16px"></i>16</div><div><i style="height:24px"></i>24</div>
+          <div><i style="height:32px"></i>32</div><div><i style="height:48px"></i>48</div><div><i style="height:64px"></i>64</div><div><i style="height:96px"></i>96</div>
+        </div>
+        <p class="guide-note">Base unit: 4 px. Gebruik 96 px tussen grote secties op desktop en 64 px op mobiel. Hoekradius: 2 px voor acties, maximaal 8 px voor afgebakende elementen.</p>
+      </section>
+
+      <!-- ============ 09 TAAL & TOEGANKELIJKHEID ============ -->
+      <section class="guide-section" id="taal">
+        <div class="guide-section-heading">
+          <p class="eyebrow">09 / Alba+</p>
+          <h2>Helder, bewust, inclusief.</h2>
+          <p>Een merk dat vrouwen serieus neemt. In onze taal én in de manier waarop iedereen de website kan gebruiken.</p>
+        </div>
+        <div class="rule-grid">
+          <div>
+            <h3>Onze stem</h3>
+            <ul class="guide-list">
+              <li>Warm en direct. Spreek de lezer aan met ‘je’ en ‘jij’.</li>
+              <li>Onderbouwd, zonder wetenschappelijke afstand.</li>
+              <li>Ondersteunend, zonder onrealistische beloftes.</li>
+              <li>De vrouw als performer, niet als patiënt.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Voor iedereen</h3>
+            <ul class="guide-list">
+              <li>Minimaal 4,5:1 contrast voor bodytekst.</li>
+              <li>Minimaal 44 × 44 px voor aanraking.</li>
+              <li>Een logische koppenstructuur en alt-tekst.</li>
+              <li>Volledig te bedienen met een toetsenbord.</li>
+              <li>Respecteer de voorkeur voor minder beweging.</li>
+            </ul>
           </div>
         </div>
-        <div class="tint">50%</div>
-      </div>
+        <div class="voice-example">
+          <p class="eyebrow">Zo klinkt Alba+</p>
+          <p>“Menopauze is een transitie,<br><em class="lk">geen achteruitgang.</em>”</p>
+        </div>
+      </section>
+
+      <!-- ============ 10 PACKAGING ============ -->
+      <section class="guide-section" id="packaging">
+        <div class="guide-section-heading">
+          <p class="eyebrow">10 / Alba+</p>
+          <div class="heading-row"><h2>Packaging.</h2><span class="wip">Work in progress</span></div>
+          <p>Elk product krijgt een eigen basiskleur binnen het Alba+ systeem: groot woordmerk, Larken-titel en het dageraad symbool als fijne lijn.</p>
+        </div>
+        <figure class="pack-hero"><img src="assets/img/packaging-slaap-pouch.jpg" alt="Alba+ Herstel &amp; Slaap pouch naast kersen, kamille en theeblad op marmer"></figure>
+        <div class="pack-grid">
+          <img class="pack-tall" src="assets/img/packaging-omega3.jpg" alt="Alba+ Omega-3: bruine glazen pot tussen saliegroene doosjes">
+          <div class="pack-stack">
+            <img src="assets/img/packaging-slaap-patroon.jpg" alt="Herstel &amp; Slaap pouches, voor- en achterkant, in een raster">
+            <img src="assets/img/packaging-brainfog.jpg" alt="Alba+ Stress &amp; Brain Fog: pot tussen lila doosjes">
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ VERSIES ============ -->
+      <section class="guide-section" id="versies">
+        <p class="eyebrow" style="margin-bottom:14px">Versiegeschiedenis</p>
+        <ul class="changelog">
+          <li><span class="v">2.0 — oktober 2026</span><span>Nieuwe vormgeving en samenvoeging met de digitale styleguide: kleurtinten, typografische schaal, bouwblokken, layout &amp; ruimte, taal &amp; toegankelijkheid. Logo nu ook als SVG.</span></li>
+          <li><span class="v">In ontwikkeling</span><span>Packaging: Herstel &amp; Slaap, Omega-3 en Stress &amp; Brain Fog.</span></li>
+          <li><span class="v">1.0 — maart 2026</span><span>Brand Essentials: merkidentiteit, waarden, logo, dageraad symbool, beeldtaal, kleur en typografie.</span></li>
+        </ul>
+      </section>
     </div>
   </div>
-</section>
+</main>
 
-<!-- ============ TYPOGRAFIE ============ -->
-<section id="typografie" class="bg-dawn">
-  <div class="wrap">
-    <h2 class="title">Typografie</h2>
-    <div class="type-labels">
-      <div>Hoofdtitels en quotes: <strong>Larken (Adobe Fonts)</strong></div>
-      <div>Tussentitels en lopende tekst: <strong>Degular (Adobe Fonts)</strong></div>
-    </div>
-    <div class="split top">
-      <p class="specimen-display">Science<br>that<br>moves<br>with<br>you</p>
-      <div class="specimen-text">
-        <h3>From Dusk Till Dawn</h3>
-        <p>The dawn has been sacred to almost every civilisation that ever looked up at the sky. Long before science could explain the mechanics of sunrise, human cultures across the world independently chose the moment of first light as a symbol of power, renewal and divine presence.</p>
-        <h3>Nutritional benefits</h3>
-        <p>The universality of this instinct speaks to something deep in our shared experience — the relief of darkness lifting, the return of warmth, the world made visible again. In ancient Egypt, the scarab beetle Khepri was the god of the rising sun, pushing the solar disc above the horizon each morning as an act of cosmic will.</p>
-        <h3>Your sister will love it too</h3>
-        <p>The Egyptians saw the dawn not merely as a natural phenomenon but as a daily miracle — proof that the world had survived another night.</p>
-        <p>What connects all of these traditions is not coincidence but human truth. The dawn is the one moment in every day when the world resets. When whatever happened in the darkness is behind you, and what lies ahead is still open. It is the original symbol of resilience — not the dramatic kind, but the quiet, daily kind. The kind that simply keeps showing up.</p>
-        <p>Every morning they rise is a continuation of something ancient, universal and entirely their own.</p>
-      </div>
-    </div>
-    <div class="alphabet">
-      <div><p class="eyebrow">Larken</p><div class="a-display">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>0123456789</div>
-        <div class="downloads"><a class="btn" href="https://fonts.adobe.com/fonts/larken" target="_blank" rel="noopener">↗ Larken op Adobe Fonts</a></div></div>
-      <div><p class="eyebrow">Degular</p><div class="a-text">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz 0123456789</div>
-        <div class="downloads"><a class="btn" href="https://fonts.adobe.com/fonts/degular" target="_blank" rel="noopener">↗ Degular op Adobe Fonts</a></div></div>
-    </div>
+<footer class="brand-footer page-width">
+  <img class="wordmark" src="assets/logo/alba-logo-nightwatch.svg" alt="alba+">
+  <span>Science that moves with you.</span>
+  <a class="link-arrow" href="mailto:stijn@stans.be">stijn@stans.be <svg><use href="#arrow"/></svg></a>
+  <div class="footer-bottom">
+    <span>© 2026 Alba+ · Brand Essentials 2.0</span>
+    <span>Opgemaakt door Stijn Anseel</span>
   </div>
-</section>
-
-<!-- ============ PACKAGING (work in progress) ============ -->
-<section id="packaging">
-  <div class="wrap">
-    <div class="section-head">
-      <h2 class="title">Packaging</h2>
-      <span class="wip">Work in progress</span>
-    </div>
-    <figure class="pack-hero">
-      <img src="assets/img/packaging-slaap-pouch.jpg" alt="Alba+ Herstel &amp; Slaap pouch naast kersen, kamille en theeblad op marmer">
-    </figure>
-    <div class="pack-grid">
-      <img class="pack-tall" src="assets/img/packaging-omega3.jpg" alt="Alba+ Omega-3: bruine glazen pot tussen saliegroene doosjes">
-      <div class="pack-stack">
-        <img src="assets/img/packaging-slaap-patroon.jpg" alt="Herstel &amp; Slaap pouches, voor- en achterkant, in een raster">
-        <img src="assets/img/packaging-brainfog.jpg" alt="Alba+ Stress &amp; Brain Fog: pot tussen lila doosjes">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ VERSIES ============ -->
-<section class="bg-paper" id="versies">
-  <div class="wrap">
-    <p class="eyebrow">Versiegeschiedenis</p>
-    <ul class="changelog">
-      <li><span class="v">In ontwikkeling</span><span>Packaging: Herstel &amp; Slaap, Omega-3 en Stress &amp; Brain Fog (work in progress).</span></li>
-      <li><span class="v">1.0 — maart 2026</span><span>Brand Essentials: merkidentiteit, waarden, logo, dageraad symbool, beeldtaal, kleur, typografie en eerste toepassingen.</span></li>
-    </ul>
-  </div>
-</section>
-
-<footer>
-  <img src="assets/logo/alba-logo-nightwatch.png" alt="alba+">
-  <span>Alba+ Brand Essentials · Opgemaakt door Stijn Anseel · <a href="mailto:stijn@stans.be">stijn@stans.be</a></span>
 </footer>
 
 <script>
-  // HEX-waarden kopiëren
+  // HEX-codes kopiëren
   document.querySelectorAll('.copy').forEach(btn => {
     btn.addEventListener('click', async () => {
       try { await navigator.clipboard.writeText(btn.dataset.copy); } catch (e) {}
@@ -377,14 +515,27 @@
       setTimeout(() => btn.classList.remove('done'), 1400);
     });
   });
-  // Actieve sectie in de navigatie
-  const links = [...document.querySelectorAll('.nav ul a')];
+
+  // Actief hoofdstuk in de zijbalk
+  const links = [...document.querySelectorAll('.guide-sidebar nav a')];
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
     });
-  }, { rootMargin: '-45% 0px -50% 0px' });
+  }, { rootMargin: '-40% 0px -55% 0px' });
   links.forEach(a => { const s = document.querySelector(a.getAttribute('href')); if (s) io.observe(s); });
+
+  // Inschrijfformulier: enkel een voorbeeld, er wordt niets verstuurd
+  const form = document.getElementById('signup');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const input = form.querySelector('input[type=email]');
+    const out = form.querySelector('.signup-result');
+    const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+    input.classList.toggle('error', !ok);
+    out.style.color = ok ? '' : 'var(--destructive)';
+    out.textContent = ok ? 'Bedankt! (Dit is een voorbeeld — er is niets verstuurd.)' : 'Vul een geldig e-mailadres in.';
+  });
 </script>
 </body>
 </html>
