@@ -1,0 +1,6 @@
+/* Kleine aanvullingen bovenop de gecompileerde styles.css (die blijft ongewijzigd). */
+
+/* Footer: tagline optisch centreren op de x-hoogte van het woordmerk i.p.v. op het logovak */
+@media (min-width: 768px) {
+  .brand-footer > span { position: relative; top: 4px; }
+}
