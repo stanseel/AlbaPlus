@@ -98,13 +98,13 @@ em.lk { font-style: italic; }
 .callout strong { font-weight: 600; }
 
 /* ---------- Knoppen ---------- */
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; height: 48px; padding: 12px 24px; border-radius: 2px; font-size: 16px; font-weight: 500; white-space: nowrap; cursor: pointer; border: 1px solid transparent; transition: background-color .15s, color .15s; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; height: 48px; padding: 12px 24px; border-radius: 999px; font-size: 16px; font-weight: 500; white-space: nowrap; cursor: pointer; border: 1px solid transparent; transition: background-color .15s, color .15s; }
 .btn svg { width: 16px; height: 16px; flex: none; }
 .btn-primary { background: var(--night); color: var(--paper); }
 .btn-primary:hover { background: color-mix(in srgb, var(--night) 88%, var(--paper)); }
 .btn-secondary { background: transparent; color: var(--night); border-color: color-mix(in srgb, var(--night) 30%, transparent); }
 .btn-secondary:hover { background: var(--water-25); }
-.btn-text { background: transparent; color: var(--night); padding-inline: 0; }
+.btn-text { background: transparent; color: var(--night); }
 .btn-text:hover { text-decoration: underline; text-underline-offset: 4px; }
 .btn[disabled] { opacity: .4; cursor: not-allowed; }
 .button-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 22px; }
