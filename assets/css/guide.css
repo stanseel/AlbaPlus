@@ -162,6 +162,10 @@ em.lk { font-style: italic; }
 .photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
 .photo-pair img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 
+.wide-photo { margin-top: 24px; }
+.wide-photo img { width: 100%; height: auto; }
+.wide-photo figcaption { margin-top: 10px; font-size: 13px; color: var(--muted); }
+
 /* ---------- 04 Kleuren ---------- */
 .swatches { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
 .colour-swatch { position: relative; display: flex; flex-direction: column; justify-content: space-between; height: 210px; padding: 24px 22px 18px; border-top-left-radius: 32px; }
