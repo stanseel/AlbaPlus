@@ -4,3 +4,6 @@
 @media (min-width: 768px) {
   .brand-footer > span { position: relative; top: 4px; }
 }
+
+/* Portret van Marthe (staand beeld in het bijna vierkante vak): uitsnede op het gezicht */
+.founder-image img { object-position: 50% 22%; }
